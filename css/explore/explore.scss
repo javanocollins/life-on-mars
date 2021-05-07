@@ -13,6 +13,25 @@
     padding: 2rem 6rem;
 }
 
+.btn {
+            padding: 0.7rem 1.5rem;
+            font-size: 1.11rem;
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            border: solid #fff 3px;
+            border-radius: 10px;
+            transition: all ease 0.1s;
+            transform: scale(1);
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: #000;
+                transition: all ease 0.1s;
+                transform: scale(0.9);
+            }
+        }
+
 #explore-header {
     // background-image: url("../../img/night-bg.jpg");
     background-position: center;
@@ -76,25 +95,6 @@
             }
         }
 
-        .showcase-btn {
-            padding: 0.7rem 1.5rem;
-            font-size: 1.11rem;
-            background-color: rgba(0, 0, 0, 0);
-            color: #fff;
-            border: solid #fff 3px;
-            border-radius: 10px;
-            transition: all ease 0.1s;
-            transform: scale(1);
-            cursor: pointer;
-
-            &:hover {
-                background-color: rgb(255, 255, 255);
-                color: #000;
-                transition: all ease 0.1s;
-                transform: scale(0.9);
-            }
-        }
-
         #showcase-info {
             width: 45%;
             padding-bottom: 2rem;
@@ -131,6 +131,7 @@
 .camera-name {
     font-family: "Roboto Condensed";
     font-size: 3rem;
+    cursor: pointer;
 }
 
 .explore-img {
@@ -138,8 +139,13 @@
     margin-top: 3rem;
     margin-right: 3rem;
     cursor: pointer;
-
+    transform: scale(1);
+    transition: all ease .2s;
+    
     &:hover {
+        transform: scale(.9);
+        transition: all ease .2s;
+
     }
 }
 
@@ -179,17 +185,18 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   }
   
   /* Modal Content (Image) */
   .modal-content {
     margin: auto;
+    padding: 1rem;
     display: block;
-    width: 500px;
-    // max-width: 700px;
+    // width: 100%;
+    max-width: 700px;
   }
 
    @keyframes zoom {
@@ -222,16 +229,18 @@
     }
   }
 
-.curiosity,
-.perseverance,
-.sojourner {
+.curiosity-container,
+.perseverance-container,
+.opportunity-container,
+.spirit-container {
     margin: 3rem 0;
     text-align: center;
 }
 
 .curiosity-images-container,
 .perseverance-images-container,
-.sojourner-images-container {
+.spirit-images-container, 
+.opportunity-images-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

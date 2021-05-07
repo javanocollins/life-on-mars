@@ -9,7 +9,7 @@ const setBg = (headerName) => {
     const nightBg = "url('../img/night-bg.jpg')";
     let setBg = '';
 
-    if (hr >= 20 || hr <= 8) {
+    if (hr >= 20 || hr <= 5) {
         setBg = nightBg;
     } else {
         setBg = dayBg;
@@ -19,7 +19,3 @@ const setBg = (headerName) => {
 };
 
 setBg(homeHeader);
-
-roverImages("curiosity", curiosityImages);
-roverImages("sojourner", sojournerImages);
-roverImages("perseverance", perseveranceImages);
