@@ -11,6 +11,29 @@
   padding: 2rem 6rem;
 }
 
+.btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.11rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: solid #fff 3px;
+  border-radius: 10px;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 #home-header {
   background-position: center;
   background-size: cover;
