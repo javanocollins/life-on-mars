@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    padding: 2rem 6rem;
+}
+
+#explore-header {
+    // background-image: url("../../img/night-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Roboto Condensed";
+
+    .navbar {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 0 10px;
+        }
+
+        #logo {
+            width: 70px;
+            transform: scale(1);
+            transition: all ease 0.2s;
+
+            &:hover {
+                transform: scale(0.85);
+                transition: all ease 0.2s;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+        #head-title {
+            color: #000;
+            font-size: 9rem;
+            font-weight: 300;
+            letter-spacing: -11px;
+            line-height: 125px;
+            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+
+            #mars {
+                font-size: 9.9rem;
+                font-weight: 700;
+                letter-spacing: 25px;
+            }
+        }
+
+        .showcase-btn {
+            padding: 0.7rem 1.5rem;
+            font-size: 1.11rem;
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            border: solid #fff 3px;
+            border-radius: 10px;
+            transition: all ease 0.1s;
+            transform: scale(1);
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: #000;
+                transition: all ease 0.1s;
+                transform: scale(0.9);
+            }
+        }
+
+        #showcase-info {
+            width: 45%;
+            padding-bottom: 2rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            color: #000000;
+            line-height: 20px;
+        }
+
+        i {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+    }
+}
+
+#explore {
+    padding-top: 4rem;
+}
+
+.container {
+    padding: 2rem 6rem;
+}
+
+#section-head {
+    font-family: "Roboto Condensed";
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ce392e;
+}
+
+.camera-name {
+    font-family: "Roboto Condensed";
+    font-size: 3rem;
+}
+
+.explore-img {
+    width: 250px;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+
+    &:hover {
+    }
+}
+
+.myImg {
+    width: 400px;
+    height: 280px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.2s;
+    }
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 500px;
+    // max-width: 700px;
+  }
+
+   @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+.curiosity,
+.perseverance,
+.sojourner {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.curiosity-images-container,
+.perseverance-images-container,
+.sojourner-images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

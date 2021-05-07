@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/explore/explore.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/c34c8ba824.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <title>Exploring Mars</title>
+    </head>
+    <body>
+        <header id="explore-header" class="container">
+            <nav class="navbar">
+                <a href="index.html">
+                    <img id="logo" src="./img/mars-logo.png" alt="" />
+                </a>
+
+                <div class="nav-links">
+                    <!-- <a href="">
+                        <img src="./img/app-store-badge.png" />
+                    </a>
+                    <a href="">
+                        <img src="./img/google-store-badge.png" />
+                    </a> -->
+                </div>
+            </nav>
+            <div class="showcase">
+                <h1 id="head-title">
+                    Explore<br /><span id="mars">Mars</span>
+                </h1>
+                <p id="showcase-info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore nisi earum aliquid reprehenderit iure hic soluta
+                    error adipisci dolor possimus. Tempore nisi earum aliquid
+                    reprehenderit iure hic soluta error adipisci dolor possimus.
+                </p>
+                <i
+                    class="fas fa-arrow-circle-down animate__animated animate__bounce animate__infinite"
+                ></i>
+            </div>
+        </header>
+
+        <section id="explore" class="container">
+            <h2 id="section-head">Explore Mars</h2>
+
+            <!-- FHAZ -->
+            <div class="curiosity">
+                <h2 class="camera-name">Curiosity</h2>
+                <div class="curiosity-images-container">
+                </div>
+            </div>
+
+            <!-- RHAZ -->
+            <div class="sojourner">
+                <h2 class="camera-name">Sojourner</h2>
+                <div class="sojourner-images-container"></div>
+            </div>
+
+            <!-- MAST -->
+            <div class="perseverance">
+                <h2 class="camera-name">Perseverance</h2>
+                <div class="perseverance-images-container"></div>
+            </div>
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01" />
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </section>
+
+        <script src="/js/explore.js"></script>
+    </body>
+</html>
