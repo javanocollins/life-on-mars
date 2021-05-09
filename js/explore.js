@@ -42,7 +42,7 @@ const setBg = (headerName) => {
     if (hr >= 20 || hr <= 5) {
         setBg = nightBg;
     } else {
-        setBg = nightBg;
+        setBg = dayBg;
     }
     headerName.style.backgroundImage = setBg;
 };
