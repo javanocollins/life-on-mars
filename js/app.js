@@ -5,8 +5,8 @@ let exploreHeader = document.getElementById("explore-header");
 let hr = new Date().getHours();
 
 const setBg = (headerName) => {
-    let dayBg = "url('/img/header-bg.png')";
-    let nightBg = "url('/img/night-bg.jpg')";
+    let dayBg = "url('/img/header-bg.png')"
+    let nightBg = "url('/img/night-bg.jpg')"
     let setBg = '';
 
     if (hr >= 20 || hr <= 5) {
@@ -15,7 +15,7 @@ const setBg = (headerName) => {
         setBg = dayBg;
     }
 
-    headerName.style.backgroundImage = setBg;
+    headerName.style.backgroundImage = setBg
 };
 
 setBg(homeHeader);

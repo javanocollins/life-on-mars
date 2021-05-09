@@ -35,8 +35,8 @@ From 6am to 7:59pm: Day Background Image
 let hr = new Date().getHours();
 
 const setBg = (headerName) => {
-    let dayBg = "url('/img/header-bg.png')";
-    let nightBg = "url('/img/night-bg.jpg')";
+    let dayBg = "url('/img/header-bg.png')"
+    let nightBg = "url('/img/night-bg.jpg')"
     let setBg = "";
 
     if (hr >= 20 || hr <= 5) {
