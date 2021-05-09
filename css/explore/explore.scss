@@ -14,23 +14,23 @@
 }
 
 .btn {
-            padding: 0.7rem 1.5rem;
-            font-size: 1.11rem;
-            background-color: rgba(0, 0, 0, 0);
-            color: #fff;
-            border: solid #fff 3px;
-            border-radius: 10px;
-            transition: all ease 0.1s;
-            transform: scale(1);
-            cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.11rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: solid #fff 3px;
+    border-radius: 10px;
+    transition: all ease 0.1s;
+    transform: scale(1);
+    cursor: pointer;
 
-            &:hover {
-                background-color: rgb(255, 255, 255);
-                color: #000;
-                transition: all ease 0.1s;
-                transform: scale(0.9);
-            }
-        }
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        transition: all ease 0.1s;
+        transform: scale(0.9);
+    }
+}
 
 #explore-header {
     // background-image: url("../../img/night-bg.jpg");
@@ -140,12 +140,11 @@
     margin-right: 3rem;
     cursor: pointer;
     transform: scale(1);
-    transition: all ease .2s;
-    
-    &:hover {
-        transform: scale(.9);
-        transition: all ease .2s;
+    transition: all ease 0.2s;
 
+    &:hover {
+        transform: scale(0.9);
+        transition: all ease 0.2s;
     }
 }
 
@@ -171,12 +170,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -186,26 +187,30 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
     margin: auto;
     padding: 1rem;
     display: block;
     // width: 100%;
     max-width: 700px;
-  }
+}
 
-   @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -213,21 +218,21 @@
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 .curiosity-container,
 .perseverance-container,
@@ -239,8 +244,8 @@
 
 .curiosity-images-container,
 .perseverance-images-container,
-.spirit-images-container, 
-.opportunity-images-container{
+.spirit-images-container,
+.opportunity-images-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

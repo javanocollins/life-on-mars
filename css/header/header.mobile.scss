@@ -1,0 +1,44 @@
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #home-header {
+        .navbar {
+            margin-top: 1rem;
+            #logo {
+                width: 50px;
+                transform: scale(1);
+                transition: all ease 0.2s;
+
+                &:hover {
+                    transform: scale(0.85);
+                    transition: all ease 0.2s;
+                }
+            }
+        }
+
+        .showcase {
+            #head-title {
+                font-size: 5rem;
+                line-height: 70px;
+                letter-spacing: -5px;
+
+                #mars {
+                    font-size: 5.5rem;
+                }
+            }
+
+            .showcase-btn {
+                padding: 0.6rem 1.1rem;
+                font-size: 1.1rem;
+            }
+
+            #showcase-info {
+                width: 75%;
+                padding-bottom: 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
