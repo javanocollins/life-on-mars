@@ -165,15 +165,15 @@
   cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 .explore-img:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 .myImg {

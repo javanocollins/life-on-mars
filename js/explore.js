@@ -35,14 +35,14 @@ From 6am to 7:59pm: Day Background Image
 let hr = new Date().getHours();
 
 const setBg = (headerName) => {
-    const dayBg = "url('../img/header-bg.png')";
-    const nightBg = "url('../img/night-bg.jpg')";
+    let dayBg = "url('./img/header-bg.png')"
+    let nightBg = "url('./img/night-bg.png')"
     let setBg = "";
 
     if (hr >= 20 || hr <= 5) {
         setBg = nightBg;
     } else {
-        setBg = nightBg;
+        setBg = dayBg;
     }
     headerName.style.backgroundImage = setBg;
 };
@@ -53,7 +53,7 @@ opportunityName.addEventListener("click", () => {
     } else {
         opportunityImages.style.display == "block";
     }
-});
+});  
 
 /*
 This function fetches a dynamic NASA url by

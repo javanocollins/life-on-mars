@@ -1,0 +1,39 @@
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  #home-header .navbar {
+    margin-top: 1rem;
+  }
+  #home-header .navbar #logo {
+    width: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  #home-header .navbar #logo:hover {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  #home-header .showcase #head-title {
+    font-size: 5rem;
+    line-height: 70px;
+    letter-spacing: -5px;
+  }
+  #home-header .showcase #head-title #mars {
+    font-size: 5.5rem;
+  }
+  #home-header .showcase .showcase-btn {
+    padding: 0.6rem 1.1rem;
+    font-size: 1.1rem;
+  }
+  #home-header .showcase #showcase-info {
+    width: 75%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=header.mobile.css.map */

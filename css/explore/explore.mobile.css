@@ -1,0 +1,81 @@
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  #explore-header .navbar {
+    margin-top: 1rem;
+  }
+  #explore-header .navbar #logo {
+    width: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  #explore-header .navbar #logo:hover {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  #explore-header .showcase #head-title {
+    font-size: 5rem;
+    line-height: 70px;
+    letter-spacing: -5px;
+  }
+  #explore-header .showcase #head-title #mars {
+    font-size: 5.5rem;
+    letter-spacing: 15px;
+  }
+  #explore-header .showcase .showcase-btn {
+    padding: 0.6rem 1.1rem;
+    font-size: 1.1rem;
+  }
+  #explore-header .showcase #showcase-info {
+    width: 75%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  #section-head {
+    font-size: 4rem;
+  }
+  #explore {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .explore-img {
+    width: 300px;
+    margin-top: 3rem;
+    margin-right: 0;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  .explore-img:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+  .curiosity-container,
+  .perseverance-container,
+  .opportunity-container,
+  .spirit-container {
+    margin: 3rem 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=explore.mobile.css.map */
