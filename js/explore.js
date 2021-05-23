@@ -53,7 +53,7 @@ opportunityName.addEventListener("click", () => {
     } else {
         opportunityImages.style.display == "block";
     }
-});
+});  
 
 /*
 This function fetches a dynamic NASA url by

@@ -1,3 +1,4 @@
+// Small View Size
 @media screen and (max-width: 480px) {
     .container {
         padding: 1rem;
@@ -75,4 +76,19 @@
         flex-direction: column;
         justify-content: center;
     }
+}
+
+// Medium View Sizes
+@media screen and (max-width: 768) {
+    
+}
+
+// Large View Sizes
+@media screen and (max-width: 1024) {
+    
+}
+
+// Extra-Large View Sizes
+@media screen and (max-width: 1200) {
+    
 }
